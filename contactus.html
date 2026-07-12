@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Core Muzic</title>
+  <meta name="description" content="Get in touch with Core Muzic support and administration teams.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Aurora Background Orbs -->
+  <div class="aurora-container">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-svg" viewBox="0 0 32 32">
+          <rect class="logo-bar" x="2" y="4" width="4" height="24" rx="2" />
+          <rect class="logo-bar" x="8" y="4" width="4" height="24" rx="2" />
+          <rect class="logo-bar" x="14" y="4" width="4" height="24" rx="2" />
+          <rect class="logo-bar" x="20" y="4" width="4" height="24" rx="2" />
+          <rect class="logo-bar" x="26" y="4" width="4" height="24" rx="2" />
+        </svg>
+        <span>Core Muzic</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+          <li><a href="contactus.html" class="nav-link active">Contact</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="terms.html" class="nav-link">Terms</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://dashboard.coremuzic.com" class="nav-login" target="_blank" rel="noopener noreferrer">Login</a>
+        <a href="https://dashboard.coremuzic.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Register</a>
+      </div>
+
+      <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Panel -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-nav-panel" id="mobileNavPanel">
+    <ul class="mobile-menu">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="aboutus.html" class="mobile-link">About Us</a></li>
+      <li><a href="contactus.html" class="mobile-link active">Contact</a></li>
+      <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+      <li><a href="terms.html" class="mobile-link">Terms</a></li>
+    </ul>
+    <div class="mobile-actions">
+      <a href="https://dashboard.coremuzic.com" class="btn btn-secondary mobile-login-btn" target="_blank">Login</a>
+      <a href="https://dashboard.coremuzic.com" class="btn btn-primary mobile-signup-btn" target="_blank">Register</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <section class="subpage-header">
+      <div class="container">
+        <h1 class="gradient-text">Contact Us</h1>
+        <p>Have questions about your music distribution, royalties, or need technical support? We are here to help.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="info-icon">✉</div>
+              <div class="info-details">
+                <h4>Support Email</h4>
+                <p><a href="mailto:support@coremuzic.com">support@coremuzic.com</a></p>
+                <p>Response time: Within 24-48 hours</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-details">
+                <h4>Cambodia Office Address</h4>
+                <p>#18C, St.209A, Phum 4, Chrang Chamreh Ti Mouy, Russey Keo, Phnom Penh, Cambodia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <div class="form-banner" id="formBanner"></div>
+            <form id="contactForm" novalidate>
+              <div class="form-group" id="nameGroup">
+                <input type="text" id="contactName" class="form-control" placeholder=" " required>
+                <label for="contactName">Your Name</label>
+              </div>
+              
+              <div class="form-group" id="emailGroup">
+                <input type="email" id="contactEmail" class="form-control" placeholder=" " required>
+                <label for="contactEmail">Your Email</label>
+              </div>
+
+              <div class="form-group" id="phoneGroup">
+                <input type="text" id="contactPhone" class="form-control" placeholder=" ">
+                <label for="contactPhone">Phone Number (Optional)</label>
+              </div>
+
+              <div class="form-group" id="messageGroup">
+                <textarea id="commentsText" class="form-control" placeholder=" " required></textarea>
+                <label for="commentsText">Your Message</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg class="logo-svg" viewBox="0 0 32 32" style="width: 24px; height: 24px;">
+            <rect class="logo-bar" x="2" y="4" width="4" height="24" rx="2" />
+            <rect class="logo-bar" x="8" y="4" width="4" height="24" rx="2" />
+            <rect class="logo-bar" x="14" y="4" width="4" height="24" rx="2" />
+            <rect class="logo-bar" x="20" y="4" width="4" height="24" rx="2" />
+            <rect class="logo-bar" x="26" y="4" width="4" height="24" rx="2" />
+          </svg>
+          <span>Core Muzic</span>
+        </a>
+        <p>Providing free unlimited music distribution worldwide including Content ID and TikTok. Keep 100% of your ownership and expand your career.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal & Help</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="mailto:support@coremuzic.com">Support Mail</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>Copyright &copy; 2026 Core Muzic. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook"><span style="font-family: sans-serif; font-weight: bold;">F</span></a>
+        <a href="#" aria-label="Twitter"><span style="font-family: sans-serif; font-weight: bold;">T</span></a>
+        <a href="#" aria-label="Instagram"><span style="font-family: sans-serif; font-weight: bold;">I</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
