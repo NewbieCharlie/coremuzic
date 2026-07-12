@@ -5,19 +5,19 @@
   --font-display: 'Josefin Sans', sans-serif;
   --font-sans: 'Outfit', sans-serif;
 
-  /* Color Palette - Aurora Cyberpunk */
-  --bg-primary: #030306;
-  --bg-secondary: #080912;
-  --bg-card: rgba(15, 17, 30, 0.65);
-  --bg-glass: rgba(8, 9, 17, 0.7);
-  --border-glass: rgba(255, 255, 255, 0.05);
+  /* Color Palette - Refined Deep Purple & Rose-Indigo */
+  --bg-primary: #040508;
+  --bg-secondary: #0a0b12;
+  --bg-card: rgba(18, 20, 32, 0.75);
+  --bg-glass: rgba(10, 11, 18, 0.8);
+  --border-glass: rgba(255, 255, 255, 0.04);
 
-  --accent-cyan: #00f2fe;
-  --accent-purple: #9b51e0;
-  --accent-rose: #f5576c;
-  --accent-gradient: linear-gradient(135deg, #00f2fe 0%, #9b51e0 50%, #f5576c 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #f5576c 0%, #9b51e0 50%, #00f2fe 100%);
-  --accent-glow: rgba(0, 242, 254, 0.3);
+  --accent-cyan: #4f46e5; /* Indigo */
+  --accent-purple: #7c3aed; /* Deep Purple */
+  --accent-rose: #db2777; /* Deep Pink */
+  --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #db2777 0%, #7c3aed 50%, #4f46e5 100%);
+  --accent-glow: rgba(79, 70, 229, 0.2);
 
   --text-primary: #ffffff;
   --text-secondary: #94a3b8;
@@ -53,14 +53,7 @@ body {
 
 /* Aurora Backdrop Orbs */
 .aurora-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
-  pointer-events: none;
+  display: none;
 }
 
 .aurora-orb {
@@ -614,6 +607,10 @@ a {
   display: flex;
   align-items: center;
   overflow: hidden;
+  background: linear-gradient(180deg, rgba(4, 5, 8, 0.75) 0%, rgba(4, 5, 8, 0.95) 100%), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-grid {
@@ -921,6 +918,9 @@ a {
 .about-section {
   position: relative;
   overflow: hidden;
+  background: linear-gradient(180deg, rgba(10, 11, 18, 0.9) 0%, rgba(4, 5, 8, 0.96) 100%), url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
 }
 
 .about-intro-grid {
@@ -1049,7 +1049,9 @@ a {
 .subpage-header {
   padding: 12rem 0 5rem 0;
   text-align: center;
-  background: radial-gradient(circle at center, rgba(155, 81, 224, 0.08) 0%, transparent 60%);
+  background: linear-gradient(180deg, rgba(4, 5, 8, 0.8) 0%, rgba(4, 5, 8, 0.95) 100%), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
   border-bottom: 1px solid var(--border-glass);
 }
 
@@ -1337,6 +1339,14 @@ textarea.form-control {
   position: absolute;
   left: -1.5rem;
   color: var(--accent-cyan);
+}
+
+.header-divider {
+  display: block;
+  margin: 1.25rem auto;
+  max-width: 140px;
+  height: auto;
+  opacity: 0.85;
 }
 
 
