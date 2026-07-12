@@ -642,11 +642,11 @@ a {
 }
 
 .hero-content h1 {
-  font-size: 4rem;
-  line-height: 1.05;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.03em;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
 }
 
 .hero-content p.headline-sub {
