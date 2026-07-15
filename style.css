@@ -1,3 +1,9 @@
+/*
+Theme Name: Core Muzic Custom
+Author: Core Muzic
+Description: Custom static theme for Core Muzic
+Version: 1.0
+*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -1511,3 +1517,12 @@ textarea.form-control {
 
 
 
+
+/* Responsive Overrides (Core Muzic) */
+.hero-content h1, .subpage-header h1 { font-size: clamp(2rem, 6vw, 3.5rem) !important; }
+.section-header h2 { font-size: clamp(1.8rem, 5vw, 2.5rem) !important; }
+.nav-menu.active ~ .logo, .navbar.menu-open .logo { display: none !important; }
+@media (max-width: 768px) {
+  .container { padding: 0 1.25rem !important; }
+  .section-padding, .page-content, .subpage-header { padding: 3rem 0 !important; }
+}
