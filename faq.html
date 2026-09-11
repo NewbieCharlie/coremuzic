@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  
-  
-  
-  
-  
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap">
+
+  <!-- Stylesheets & Favicons -->
   <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
   <link rel="icon" href="assets/favicon-192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="assets/favicon-192.png">
@@ -34,6 +33,80 @@
   <meta name="twitter:title" content="FAQ | Core Muzic">
   <meta name="twitter:description" content="Frequently Asked Questions about Core Muzic digital music distribution.">
   <meta name="twitter:image" content="https://coremuzic.com/assets/hero-bg.jpg">
+
+  <!-- Schema.org FAQ Data -->
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How do I distribute my music with Core Muzic?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Simply register for a free account at our dashboard, set up your artist profile, upload your audio files and artwork, enter your metadata (credits, song titles, release date), and submit! We will review and distribute your tracks to major streaming platforms."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Which digital stores and platforms do you support?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We distribute to over 40 top-tier services globally, including Spotify, Apple Music, iTunes, Amazon Music, TikTok, YouTube Music, Deezer, Tidal, Beatport, and many others."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is it really free? Are there any hidden subscription fees?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Core Muzic offers free unlimited music distribution worldwide, including Content ID services and TikTok. There are no annual subscription fees or upfront upload costs. We make it easy for independent artists to grow their catalogs without financial risk."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I keep my rights and ownership of my music?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, absolutely. You retain 100% of your copyrights and ownership. Core Muzic only acts as your distribution partner to list your music on stores. You are free to take down your catalog or manage it at any time."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take for my releases to appear on stores?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Once submitted, releases are reviewed by our team within 24-48 hours. Most platforms like Spotify and Apple Music go live within 5 to 7 days, though we recommend submitting your release at least 14 days in advance to allow for playlist pitching and proper scheduling."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What happens if I use bots or pay for streams?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Core Muzic has a strict zero-tolerance policy against artificial streaming. If you use bots, click farms, or payola services to artificially inflate your streams, your releases will be immediately taken down, any pending royalties will be frozen, and your account will be permanently banned to comply with DSP guidelines."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I upload a remix or a song with uncleared samples?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. You must own 100% of the rights to the audio you upload. Uploading uncleared samples, unauthorized remixes, or someone else's music is copyright infringement. Releases flagged for infringement will be rejected or taken down via DMCA notices."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What are the requirements for artwork and metadata?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Artwork must be high-resolution, perfectly square, and cannot contain external URLs, social media handles, or pricing. Metadata (like artist names and track titles) must be accurate and cannot be misleading or deceptive to trick search algorithms."
+            }
+        }
+    ]
+}
+  </script>
 </head>
 <body>
 
@@ -247,14 +320,9 @@
 
     <div class="container footer-bottom">
       <p>Copyright &copy; 2026 Core Muzic. All rights reserved.</p>
-      <div class="footer-socials">
-        <a href="#" aria-label="Facebook"><span style="font-family: sans-serif; font-weight: bold;">F</span></a>
-        <a href="#" aria-label="Twitter"><span style="font-family: sans-serif; font-weight: bold;">T</span></a>
-        <a href="#" aria-label="Instagram"><span style="font-family: sans-serif; font-weight: bold;">I</span></a>
-      </div>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>

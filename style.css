@@ -4,7 +4,6 @@ Author: Core Muzic
 Description: Custom static theme for Core Muzic
 Version: 1.0
 */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
   /* Fonts */
@@ -506,7 +505,6 @@ a {
    Footer Section
    ========================================================================== */
 #footer {
-  background-color: #05060b;
   border-top: 1px solid var(--border-glass);
   padding: 5rem 0 3rem 0;
   position: relative;
@@ -556,8 +554,9 @@ a {
   border-top: 1px solid var(--border-glass);
   padding-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 0.9rem;
   color: var(--text-muted);
 }
@@ -590,6 +589,13 @@ a {
   border-color: transparent;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 242, 254, 0.2);
+}
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -882,7 +888,7 @@ a {
 
 @media (max-width: 1024px) {
   .stores-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on iPad/Tablet */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on iPad/Tablet */
     gap: 1.25rem;
   }
   .store-card {
@@ -900,7 +906,7 @@ a {
 
 @media (max-width: 768px) {
   .stores-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile phone */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile phone */
     gap: 0.75rem;
   }
   .store-card {
@@ -1515,14 +1521,56 @@ textarea.form-control {
   opacity: 0.85;
 }
 
+.stores-section {
+  position: relative;
+  background-image: url('assets/stores-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
 
-
+.stores-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(3, 3, 6, 0.7); /* Dark overlay */
+  z-index: -1;
+}
 
 /* Responsive Overrides (Core Muzic) */
 .hero-content h1, .subpage-header h1 { font-size: clamp(2rem, 6vw, 3.5rem) !important; }
 .section-header h2 { font-size: clamp(1.8rem, 5vw, 2.5rem) !important; }
 .nav-menu.active ~ .logo, .navbar.menu-open .logo { display: none !important; }
+
+@media (max-width: 1024px) {
+  .terms-content { padding: 3rem 2rem; }
+}
+
 @media (max-width: 768px) {
   .container { padding: 0 1.25rem !important; }
   .section-padding, .page-content, .subpage-header { padding: 3rem 0 !important; }
+  
+  .terms-content { padding: 2rem 1.25rem; }
+  .terms-content p, .terms-content li, .faq-content-inner { font-size: 1rem; }
+  .faq-trigger { padding: 1.25rem; }
+}
+
+#footer {
+  position: relative;
+  background-image: url('assets/footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(3, 3, 6, 0.4); /* Lighter overlay so the image shows through */
+  z-index: -1;
 }

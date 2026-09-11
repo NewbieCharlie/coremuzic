@@ -128,22 +128,28 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Mock submit action
-      showBanner('Sending your message...', 'success');
+      // Prepare mailto link with encoded message details
+      const subject = encodeURIComponent(`Core Muzic Inquiry from ${contactName.value.trim()}`);
+      const bodyLines = [
+        `Name: ${contactName.value.trim()}`,
+        `Email: ${emailValue}`,
+        contactPhone && contactPhone.value.trim() ? `Phone: ${contactPhone.value.trim()}` : '',
+        '',
+        'Message:',
+        commentsText.value.trim()
+      ].filter(line => line !== null).join('\n');
       
+      const mailtoUrl = `mailto:support@coremuzic.com?subject=${subject}&body=${encodeURIComponent(bodyLines)}`;
+
+      showBanner('Opening your email client to send to support@coremuzic.com...', 'success');
+      
+      // Open email client
+      window.location.href = mailtoUrl;
+
       setTimeout(() => {
-        showBanner('Your message was sent successfully. Thanks!', 'success');
+        showBanner('If your mail app didn\'t open, please email us directly at support@coremuzic.com.', 'success');
         contactForm.reset();
-        
-        // Remove success banner after 4 seconds
-        setTimeout(() => {
-          if (formBanner) {
-            formBanner.style.display = 'none';
-            formBanner.className = 'form-banner';
-            formBanner.textContent = '';
-          }
-        }, 4000);
-      }, 1000);
+      }, 1500);
     });
   }
 
