@@ -339,11 +339,12 @@ a {
 }
 
 .nav-link {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.95rem;
   color: var(--text-secondary);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
   padding: 0.5rem 0;
+  text-transform: uppercase;
   position: relative;
 }
 
@@ -470,10 +471,12 @@ a {
 
 .mobile-link {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-secondary);
   display: block;
   padding: 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .mobile-link.active, .mobile-link:hover {
@@ -1555,6 +1558,59 @@ textarea.form-control {
   .terms-content { padding: 2rem 1.25rem; }
   .terms-content p, .terms-content li, .faq-content-inner { font-size: 1rem; }
   .faq-trigger { padding: 1.25rem; }
+}
+
+/* Page Specific Backgrounds */
+.about-header {
+  background-image: linear-gradient(180deg, rgba(4, 5, 8, 0.4) 0%, rgba(4, 5, 8, 0.95) 100%), url('assets/about-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.about-header .subpage-header {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.contact-header {
+  background-image: linear-gradient(180deg, rgba(4, 5, 8, 0.4) 0%, rgba(4, 5, 8, 0.95) 100%), url('assets/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.contact-header .subpage-header {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.faq-header {
+  background-image: linear-gradient(180deg, rgba(4, 5, 8, 0.4) 0%, rgba(4, 5, 8, 0.95) 100%), url('assets/faq-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.faq-header .subpage-header {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.terms-header {
+  background-image: linear-gradient(180deg, rgba(4, 5, 8, 0.4) 0%, rgba(4, 5, 8, 0.95) 100%), url('assets/terms-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.terms-header .subpage-header {
+  background: transparent !important;
+  border-bottom: none !important;
 }
 
 #footer {
